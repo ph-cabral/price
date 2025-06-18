@@ -1,0 +1,13 @@
+config.json
+install
+procesamiento
+proveedores.xlsx
+search_pdfs.ipynb
+search_xlsx.py
+procesamiento.py
+limpiar_dataframe.py
+main.py
+num_normalizer.py
+__pycache__/
+procesados
+parquets
