@@ -1,6 +1,7 @@
+import os
 import dash
-from dash import dcc, html, dash_table
 import pandas as pd
+from dash import dcc, html, dash_table
 from dash.dependencies import Input, Output
 
 # Cargar el parquet
@@ -54,4 +55,5 @@ def actualizar_tabla(f1, f2, f3):
 
 # Ejecutar
 if __name__ == '__main__':
-    app.run(debug=True, port=8051)
+    port = int(os.environ.get("PORT", 8051))
+    app.run(host="0.0.0.0", port=port, debug=True)
